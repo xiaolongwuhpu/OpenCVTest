@@ -15,3 +15,7 @@ android {
 }
 ```  
 
+### 效果图
+![image](img/blur.png)
+![image](img/img_to_line.png)
+![image](img/native_img_to_line.png)

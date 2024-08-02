@@ -22,9 +22,9 @@ Java_com_example_opencvtest_MainActivity_blurImg(JNIEnv *env, jobject thiz, jobj
     //将bitmap转化为Mat类
     Mat image(info.height, info.width, CV_8UC4, pixels);
     // 设置高斯模糊的内核大小和标准差
-    Size kernelSize(15, 15); // 内核大小，奇数
-    double sigmaX = 5.0;     // X方向的标准差
-    double sigmaY = 5.0;     // Y方向的标准差
+    Size kernelSize(31, 31); // 内核大小，奇数
+    double sigmaX = 15.0;     // X方向的标准差
+    double sigmaY = 15.0;     // Y方向的标准差
 
     // 高斯模糊
     GaussianBlur(image, image, kernelSize, sigmaX, sigmaY);
