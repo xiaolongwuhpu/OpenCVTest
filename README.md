@@ -15,7 +15,8 @@ android {
 }
 ```  
 
-### 效果图
+### 效果图 
+##### 高斯模糊    图片转线稿    原生图片转线稿
 ![image](img/blur.png)
 ![image](img/img_to_line.png)
 ![image](img/native_img_to_line.png)
