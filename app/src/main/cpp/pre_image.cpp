@@ -7,7 +7,7 @@ using namespace cv;
 
 extern "C"
 JNIEXPORT void JNICALL
-Java_com_example_opencvtest_MainActivity_getEdge(JNIEnv *env, jobject thiz, jobject bitmap) {
+Java_com_example_opencvtest_MainActivity_blurImg(JNIEnv *env, jobject thiz, jobject bitmap) {
 //    AndroidBitmapInfo info;
 //    void *pixels;
 //

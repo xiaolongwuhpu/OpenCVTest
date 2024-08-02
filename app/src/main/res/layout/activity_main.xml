@@ -6,22 +6,35 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
-        android:gravity="center_horizontal"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/checkImgBtn"
+            android:id="@+id/blurImgBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="选图" />
+            android:text="高斯模糊" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
 
         <Button
-            android:id="@+id/buttonDet"
+            android:id="@+id/nativeImgToLineBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="渲染" />
+            android:textAllCaps="false"
+            android:text="图片转线native" />
+        <View
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/imgToLineBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图片转线稿" />
     </LinearLayout>
 
     <LinearLayout
@@ -30,12 +43,12 @@
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/Original_image"
+            android:id="@+id/OriginalImage"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1" />
 
-        <ImageView
+        <com.example.opencvtest.util.ScaleImageView
             android:id="@+id/showImg"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
